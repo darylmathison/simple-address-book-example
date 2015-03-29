@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="SimpleAddressBook">
+
+	<target name="makeJar">
+		<jar destfile="SimpleAddressBook.jar" defaultexcludes="true">
+			<fileset dir="bin/"/>
+			<fileset dir="src/"/>
+			<manifest>
+				<attribute name="Main-Class" 
+					value="org.mathison.addressbook.main.AddressBook"/>
+			</manifest>
+		</jar>
+	</target>
+
+</project>
